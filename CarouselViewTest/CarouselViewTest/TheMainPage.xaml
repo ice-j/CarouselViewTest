@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:cv="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.CarouselView"
+             x:Class="CarouselViewTest.TheMainPage"
+             Padding="0, 70, 0, 0"
+             BackgroundColor="Aqua">
+  <ContentPage.Content>
+    <cv:CarouselView ItemsSource="{Binding Images}" x:Name="gallery" BackgroundColor="White">
+      <cv:CarouselView.ItemTemplate>
+        <DataTemplate>
+          <Image Aspect="AspectFill" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Source="{Binding ImgUrl}" MinimumHeightRequest="200" MinimumWidthRequest="200" />
+          <Label Text="{Binding ImgUrl}" BackgroundColor="Red" TextColor="Yellow" VerticalOptions="Center" HorizontalOptions="Center" />
+        </DataTemplate>
+      </cv:CarouselView.ItemTemplate>
+    </cv:CarouselView>
+  </ContentPage.Content>
+</ContentPage>
