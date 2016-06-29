@@ -16,6 +16,7 @@ namespace CarouselViewTest
         public TheMainPage()
 		{
 			InitializeComponent ();
+            BindingContext = this;
             Images.Add(new GalleryImage
             {
                 ImgUrl = "https://www.xamarin.com/content/images/pages/branding/assets/xamagon.png"

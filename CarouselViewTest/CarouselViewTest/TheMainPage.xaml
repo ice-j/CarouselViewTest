@@ -10,7 +10,6 @@
       <cv:CarouselView.ItemTemplate>
         <DataTemplate>
           <Image Aspect="AspectFill" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Source="{Binding ImgUrl}" MinimumHeightRequest="200" MinimumWidthRequest="200" />
-          <Label Text="{Binding ImgUrl}" BackgroundColor="Red" TextColor="Yellow" VerticalOptions="Center" HorizontalOptions="Center" />
         </DataTemplate>
       </cv:CarouselView.ItemTemplate>
     </cv:CarouselView>

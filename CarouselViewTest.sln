@@ -15,6 +15,7 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "CarouselViewTest", "Carouse
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		CarouselViewTest\CarouselViewTest\CarouselViewTest.projitems*{7d01d0a3-4006-4920-aa85-cbbaff688067}*SharedItemsImports = 4
 		CarouselViewTest\CarouselViewTest\CarouselViewTest.projitems*{5ecd8ce4-d91c-4a81-acb9-9918f9cd73f7}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
