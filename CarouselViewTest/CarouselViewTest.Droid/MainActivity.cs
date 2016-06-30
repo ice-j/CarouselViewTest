@@ -6,6 +6,8 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using System.Reflection;
+using Xamarin.Forms;
 
 namespace CarouselViewTest.Droid
 {
@@ -17,7 +19,9 @@ namespace CarouselViewTest.Droid
 			base.OnCreate (bundle);
 
 			global::Xamarin.Forms.Forms.Init (this, bundle);
-			LoadApplication (new CarouselViewTest.App ());
+            var cv = typeof(CarouselView);
+            var assembly = Assembly.Load(cv.FullName);
+            LoadApplication (new CarouselViewTest.App ());
 		}
 	}
 }

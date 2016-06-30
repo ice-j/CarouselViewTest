@@ -6,7 +6,6 @@ using System.Text;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-[assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace CarouselViewTest
 {
 	public class App : Application
